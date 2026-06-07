@@ -1,5 +1,6 @@
 package com.WAP.auth_Service.service;
 
+import com.WAP.auth_Service.dto.loginRequest;
 import com.WAP.auth_Service.dto.registerRequest;
 import com.WAP.auth_Service.dto.registerResponse;
 
@@ -12,4 +13,6 @@ public interface AuthService {
     List<registerResponse> getAllUser();
 
     registerResponse getUserByid(Long id);
+
+    Boolean userLogin(loginRequest login);
 }
